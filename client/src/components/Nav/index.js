@@ -1,4 +1,5 @@
 import React from "react";
+import "./style.css";
 
 export function Nav({
     logo,
@@ -6,7 +7,7 @@ export function Nav({
 }) {
     return (
         <nav>
-            <div className="nav-wrapper">
+            <div className="nav-wrapper basic-nav">
                 <a href="/" class="brand-logo right">
                     {logo}
                 </a>

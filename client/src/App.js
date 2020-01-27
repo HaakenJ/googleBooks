@@ -1,5 +1,6 @@
 import React from 'react';
 import { Nav, NavItem } from "./components/Nav";
+import Banner from "./components/Banner";
 import './App.css';
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
         <NavItem path="/books/search" title="Search" />
         <NavItem path="/books/saved" title="Saved" />
       </Nav>
+      <Banner />
     </div>
   );
 }
