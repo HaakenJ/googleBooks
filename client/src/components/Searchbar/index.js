@@ -1,12 +1,12 @@
 import React from "react";
 import "./style.css";
 
-export function Searchbar(children) {
+export function SearchBar({ children }) {
     return(
-        <div className="container">
+        <div className="container z-depth-3 search-bar">
             <form>
                 <div className="row">
-                    <h5>Book Search</h5>
+                    <h5 className="search-title">Book Search</h5>
                 </div>
                 {children}
             </form>
@@ -14,7 +14,7 @@ export function Searchbar(children) {
     );
 }
 
-export function Input(children) {
+export function Input({ children }) {
     return (
         <div className="row">
             <div className="input-field col s12">

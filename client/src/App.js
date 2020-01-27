@@ -1,6 +1,8 @@
 import React from 'react';
 import { Nav, NavItem } from "./components/Nav";
 import Banner from "./components/Banner";
+import { SearchBar, Input } from "./components/SearchBar";
+import SearchBtn from "./components/SearchBtn";
 import './App.css';
 
 function App() {
@@ -11,6 +13,11 @@ function App() {
         <NavItem path="/books/saved" title="Saved" />
       </Nav>
       <Banner />
+      <SearchBar>
+        <Input>
+          <SearchBtn />
+        </Input>
+      </SearchBar>
     </div>
   );
 }

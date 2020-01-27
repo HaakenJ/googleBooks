@@ -4,7 +4,7 @@ import "./style.css";
 function SearchBtn() {
     return (
         <div className="row">
-            <button className="btn waves-effect waves-light" type="submit" name="action">
+            <button className="btn waves-effect waves-light search-btn" type="submit" name="action">
                 Search
             </button>
         </div>
