@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/HaakenJ/googleBooks/issues"
   },
-  "homepage": "https://github.com/HaakenJ/googleBooks#readme"
+  "homepage": "https://github.com/HaakenJ/googleBooks#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongodb": "^3.5.2",
+    "mongoose": "^5.8.10"
+  }
 }
