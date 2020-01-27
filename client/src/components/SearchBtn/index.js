@@ -1,10 +1,10 @@
 import React from "react";
 import "./style.css";
 
-function SearchBtn() {
+function SearchBtn({ onClick }) {
     return (
         <div className="row">
-            <button className="btn waves-effect waves-light search-btn" type="submit" name="action">
+            <button className="btn waves-effect waves-light search-btn" onClick={onClick} type="submit" name="action">
                 Search
             </button>
         </div>

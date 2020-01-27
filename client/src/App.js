@@ -3,6 +3,7 @@ import { Nav, NavItem } from "./components/Nav";
 import Banner from "./components/Banner";
 import { SearchBar, Input } from "./components/SearchBar";
 import SearchBtn from "./components/SearchBtn";
+import Results from "./components/Results";
 import './App.css';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <SearchBtn />
         </Input>
       </SearchBar>
+      <Results title="Results" />
     </div>
   );
 }
