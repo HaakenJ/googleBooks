@@ -4,10 +4,12 @@ import "./style.css";
 export function Searchbar(children) {
     return(
         <div className="container">
-            <div className="row">
-                <h5>Book Search</h5>
-            </div>
-            {children}
+            <form>
+                <div className="row">
+                    <h5>Book Search</h5>
+                </div>
+                {children}
+            </form>
         </div>
     );
 }
