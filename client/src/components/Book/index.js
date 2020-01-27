@@ -10,26 +10,29 @@ function Book({
     children
 }) {
     return (
-        <div className="container">
+        <div className="container z-depth-2 book-container">
             <div className="row">
-                <div className="col s6 book-title">
-                    {title}
+                <div className="col s6">
+                    <h5 className="book-title">{title}</h5>
                 </div>
                 <div className="col s6 book-buttons">
-                    <a class="waves-effect waves-light btn-small" href={link}>View</a>
+                    <a className="waves-effect waves-light btn-small view-btn" href={link}>View</a>
                     {children}
                 </div>
             </div>
-            {authors.map(author => {
-                <div className="row">
-                    <div className="book-authors">
-                        {author}
-                    </div>
-                </div>
-            })}
             <div className="row">
-                <div className="col s3 book-img">
-                    <img src={image} />
+                <div className="col s12">
+                {authors.map(author => (
+                    <div>
+                        <div className="book-authors">{author}</div>
+                        <br />
+                    </div>
+                ))}
+                </div>
+            </div>
+            <div className="row no-margin">
+                <div className="col s3">
+                    <img className="book-img" src={image} />
                 </div>
                 <div className="col s9 book-desc">
                     {description}
@@ -38,3 +41,5 @@ function Book({
         </div>
     )
 }
+
+export default Book;

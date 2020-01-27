@@ -1,0 +1,28 @@
+.book-container {
+    padding: 20px 5px
+}
+
+.book-title {
+    float: left;
+    padding: 0;
+}
+
+.view-btn {
+    float: right;
+}
+
+.author-row {
+    margin: 0;
+}
+
+.book-authors {
+    float: left;
+}
+
+.book-img {
+    width: 100%;
+}
+
+.no-margin {
+    margin-bottom: 0;
+}
