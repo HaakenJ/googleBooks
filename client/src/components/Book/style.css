@@ -7,8 +7,13 @@
     padding: 0;
 }
 
-.view-btn {
+.view-btn,
+.save-btn {
     float: right;
+}
+
+.view-btn {
+    margin-right: 5px;
 }
 
 .author-row {

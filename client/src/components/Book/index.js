@@ -7,7 +7,7 @@ function Book({
     description,
     image,
     link,
-    children
+    onSave
 }) {
     return (
         <div className="container z-depth-2 book-container">
@@ -16,8 +16,8 @@ function Book({
                     <h5 className="book-title">{title}</h5>
                 </div>
                 <div className="col s6 book-buttons">
+                    <a onClick={onSave} class="waves-effect waves-light btn-small save-btn">Save</a>
                     <a className="waves-effect waves-light btn-small view-btn" href={link}>View</a>
-                    {children}
                 </div>
             </div>
             <div className="row">
