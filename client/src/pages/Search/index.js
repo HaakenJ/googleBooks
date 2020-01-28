@@ -52,7 +52,7 @@ class Search extends Component {
                 </Input>
               </SearchBar>
               <Results title="Results">
-                {this.state.books.map(book => {
+                {this.state.books.map(book => (
                     <Book 
                     title={book.title}
                     description={book.description}
@@ -61,9 +61,11 @@ class Search extends Component {
                     link={book.link}
                     onSave={this.saveBook}
                   />
-                })}
+                ))}
               </Results>
             </div>
         )
     }
 }
+
+export default Search;
