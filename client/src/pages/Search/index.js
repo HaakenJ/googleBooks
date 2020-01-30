@@ -18,14 +18,24 @@ class Search extends Component {
         this.loadBooks = this.loadBooks.bind(this);
     }
 
+    findBook = (title) => {
+      for (let i = 0; i < this.state.books.length; i++) {
+        if (this.state.books[i].title === title) {
+          return this.state.books[i];
+        }
+      }
+      return null;
+    }
+
     loadBooks = () => {
         API.getBooks()
           .then(res => this.setState({ books: res.data }))
           .catch(err => console.error(err));
     }
 
-    saveBook = () => {
-        API.saveBook()
+    saveBook(title) {
+        const book = this.findBook(title);
+        API.saveBook(book)
           .then(res => console.log('Book has been saved'))
           .catch(err => console.error(err));
     }
